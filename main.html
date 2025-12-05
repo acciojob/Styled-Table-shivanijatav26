@@ -1,15 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- add table here -->
+<style>
+    table {
+        width: 60%;
+        border-collapse: collapse;
+        margin: 20px auto;
+        font-family: Arial, sans-serif;
+        background: #f8faff;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+    }
 
-        
+    th {
+        background-color: #4a90e2;
+        color: white;
+        padding: 12px;
+        border: 1px solid #ddd;
+        text-align: center;
+    }
+
+    td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: center;
+    }
+
+    tr:nth-child(even) {
+        background-color: #eef4ff;
+    }
+</style>
+</head>
+
+<body>
+
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>New Cases</th>
+            <th>Recovered</th>
+            <th>Deaths</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>01 Jan 2025</td>
+            <td>120</td>
+            <td>98</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>02 Jan 2025</td>
+            <td>150</td>
+            <td>110</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>03 Jan 2025</td>
+            <td>90</td>
+            <td>70</td>
+            <td>1</td>
+        </tr>
+    </tbody>
+</table>
+
 </body>
 </html>
