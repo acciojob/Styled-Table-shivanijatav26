@@ -1,69 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-    table {
-        width: 60%;
-        border-collapse: collapse;
-        margin: 20px auto;
-        font-family: Arial, sans-serif;
-        background: #f8faff;
-        box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Statistics Table</title>
+    <style>
+        /* Basic table styling */
+        table {
+            width: 80%;
+            margin: 50px auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Styling for table header */
+        thead {
+            background-color: #4CAF50;
+            color: white;
+        }
 
-    th {
-        background-color: #4a90e2;
-        color: white;
-        padding: 12px;
-        border: 1px solid #ddd;
-        text-align: center;
-    }
+        /* Styling for table rows and cells */
+        th, td {
+            padding: 12px 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
 
-    td {
-        padding: 10px;
-        border: 1px solid #ddd;
-        text-align: center;
-    }
+        /* Hover effect for rows */
+        tbody tr:hover {
+            background-color: #f5f5f5;
+        }
 
-    tr:nth-child(even) {
-        background-color: #eef4ff;
-    }
-</style>
+        /* Zebra striping effect for rows */
+        tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        /* Styling for even rows */
+        tbody tr:nth-child(even) {
+            background-color: #e9e9e9;
+        }
+
+        /* Making header text bold */
+        th {
+            font-weight: bold;
+        }
+
+        /* Custom width for specific columns */
+        td:nth-child(1) {
+            width: 30%;
+        }
+
+        td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5) {
+            width: 15%;
+        }
+
+        /* Add a bottom border for the header row */
+        thead th {
+            border-bottom: 2px solid #333;
+        }
+    </style>
 </head>
-
 <body>
 
-<table>
-    <thead>
-        <tr>
-            <th>Date</th>
-            <th>New Cases</th>
-            <th>Recovered</th>
-            <th>Deaths</th>
-        </tr>
-    </thead>
+    <h1 style="text-align: center; color: #333;">Covid-19 Statistics</h1>
 
-    <tbody>
-        <tr>
-            <td>01 Jan 2025</td>
-            <td>120</td>
-            <td>98</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>02 Jan 2025</td>
-            <td>150</td>
-            <td>110</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>03 Jan 2025</td>
-            <td>90</td>
-            <td>70</td>
-            <td>1</td>
-        </tr>
-    </tbody>
-</table>
+    <!-- Table Structure -->
+    <table>
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>Total Cases</th>
+                <th>Total Deaths</th>
+                <th>Total Recovered</th>
+                <th>Active Cases</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>USA</td>
+                <td>33,000,000</td>
+                <td>600,000</td>
+                <td>32,000,000</td>
+                <td>400,000</td>
+            </tr>
+            <tr>
+                <td>India</td>
+                <td>30,000,000</td>
+                <td>400,000</td>
+                <td>29,500,000</td>
+                <td>100,000</td>
+            </tr>
+            <tr>
+                <td>Brazil</td>
+                <td>20,000,000</td>
+                <td>550,000</td>
+                <td>19,200,000</td>
+                <td>250,000</td>
+            </tr>
+            <tr>
+                <td>UK</td>
+                <td>10,000,000</td>
+                <td>150,000</td>
+                <td>9,800,000</td>
+                <td>50,000</td>
+            </tr>
+            <tr>
+                <td>Russia</td>
+                <td>7,000,000</td>
+                <td>130,000</td>
+                <td>6,800,000</td>
+                <td>70,000</td>
+            </tr>
+        </tbody>
+    </table>
 
 </body>
 </html>
